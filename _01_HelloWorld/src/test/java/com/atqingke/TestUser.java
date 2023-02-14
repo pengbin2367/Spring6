@@ -2,6 +2,7 @@ package com.atqingke;
 
 import com.atqingke.bean.User;
 import org.junit.jupiter.api.Test;
+import org.junit.platform.commons.logging.LoggerFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class TestUser {
