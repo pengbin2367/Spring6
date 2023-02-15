@@ -17,4 +17,10 @@ public class _01GetBeanTest {
         User user = (User) context.getBean("user");
         log.info("====={}=====", user);
     }
+
+    @Test
+    public void getBeanByClass() {
+        User user = context.getBean(User.class);
+        log.info("====={}=====", user);
+    }
 }
