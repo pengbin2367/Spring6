@@ -18,6 +18,8 @@ public class _01GetBeanTest {
         log.info("====={}=====", user);
     }
 
+    // Using this method means that there is only one bean of this class
+    // NoUniqueBeanDefinitionException: No qualifying bean of type 'com.atqingke.ioc.xml.User' available: expected single matching bean but found 2: user,user1
     @Test
     public void getBeanByClass() {
         User user = context.getBean(User.class);

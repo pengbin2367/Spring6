@@ -4,5 +4,6 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="user" class="com.atqingke.ioc.xml.User"/>
+    <bean id="user1" class="com.atqingke.ioc.xml.User"/>
 
 </beans>
