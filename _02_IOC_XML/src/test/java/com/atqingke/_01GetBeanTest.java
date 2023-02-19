@@ -14,6 +14,12 @@ public class _01GetBeanTest {
     private Logger log = LoggerFactory.getLogger(_01GetBeanTest.class);
 
     @Test
+    public void injectBySetter() {
+        User user = (User) context.getBean("user2");
+        log.info("======{}=====", user);
+    }
+
+    @Test
     public void getBeanByInterface() {
         UserService userService = context.getBean(UserService.class);
         log.info("====={}=====", userService);

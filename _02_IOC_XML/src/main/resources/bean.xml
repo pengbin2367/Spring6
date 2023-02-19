@@ -5,6 +5,10 @@
 
     <bean id="user" class="com.atqingke.ioc.xml.User"/>
     <bean id="user1" class="com.atqingke.ioc.xml.User"/>
+    <bean id="user2" class="com.atqingke.ioc.xml.User">
+        <property name="age" value="23"/>
+        <property name="name" value="arch"/>
+    </bean>
 
     <bean id="userService" class="com.atqingke.ioc.xml.service.UserServiceImpl"/>
 
