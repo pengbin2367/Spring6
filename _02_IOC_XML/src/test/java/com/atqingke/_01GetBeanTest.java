@@ -1,6 +1,7 @@
 package com.atqingke;
 
 import com.atqingke.ioc.xml.User;
+import com.atqingke.ioc.xml.service.UserService;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,6 +12,12 @@ public class _01GetBeanTest {
 
     private ApplicationContext context = new ClassPathXmlApplicationContext("bean.xml");
     private Logger log = LoggerFactory.getLogger(_01GetBeanTest.class);
+
+    @Test
+    public void getBeanByInterface() {
+        UserService userService = context.getBean(UserService.class);
+        log.info("====={}=====", userService);
+    }
 
     @Test
     public void getBeanById() {

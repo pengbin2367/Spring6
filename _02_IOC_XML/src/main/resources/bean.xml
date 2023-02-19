@@ -6,4 +6,6 @@
     <bean id="user" class="com.atqingke.ioc.xml.User"/>
     <bean id="user1" class="com.atqingke.ioc.xml.User"/>
 
+    <bean id="userService" class="com.atqingke.ioc.xml.service.UserServiceImpl"/>
+
 </beans>
